@@ -1,5 +1,5 @@
 # instaperimeter
-An ESP8266 / LUA / php based burglar alert
+An ESP8266 / LUA / php based burglar alert.
 I came up with this idea when when shooting a video on installing the NODEMCU firmware on the ESP-1 module.
 
 # What it does:
