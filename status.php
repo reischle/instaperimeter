@@ -7,7 +7,7 @@
  <?php
  echo '<p><h1>Alarm Status</h1></p>';
 
-$handle = @fopen("logdir/logfile.txt", "r");
+$handle = @fopen("/var/www/areresearch.homenet.org/logdir/logfile.txt", "r");
 $buffer = fgets($handle, 20);
 fclose($handle);
 $buffer2 = explode(",",$buffer);

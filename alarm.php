@@ -9,7 +9,9 @@
 
 $sta = $_REQUEST ['status'];
 $sid = $_REQUEST ['SensorID'];
-$log = fopen("logdir/logfile.txt", "w") or die("Unable to open file!");
+$log = fopen("logdir/logfile.txt", "a") or die("Unable to open file!");
+$current_time = date("Y-m-d")." ".date("H:i:s");
+fwrite($log, $current_time . ",");
 fwrite($log, $sid . ",");
 fwrite($log, $sta . "\n");
 fclose($log);
