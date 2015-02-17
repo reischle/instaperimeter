@@ -10,10 +10,14 @@ In case of a state change, it connects to web server, passing a sensor ID and st
 
 On the web server (a raspberry pi in this case) this information is written to a text file.
 
-A browser can connect to the web server. The php-script (map.php) reads the sensor's status from the file.
-This works for one sensor only at the moment. The second sensor on the map is just a mockup. The current code does not scale to accomodate for that.
+A browser can connect to the web server. A php-script reads the sensor's status from the file.
 
 # Video tutorials
 You will want to watch these two video tutorials:
 - Lua on the ESP8266 Part 1: http://youtu.be/_GSYZ1e14nc
 - Lua on the ESP8266 Part 2 "The Burglar Alarm": http://youtu.be/G4ArTQ_KWs4
+
+Although you will notice that some improvements have been made to the code since the recordings.
+
+I am not a programmer and the software may  have serious security flaws. If you want to contribute, you are welcome. Use the software with caution.
+
