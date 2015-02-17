@@ -5,7 +5,7 @@ If I ever get to complete this project, the Idea is, that you can scatter around
 Thus: InstaPerimeter
 
 # What it does at the moment:
-The lua Code checks the status of a PIR sensor (gpio2) of an esp-01 module every second
+The lua Code checks the status of a PIR sensor (gpio2) connected to an esp-01 module every second. 
 In case of a state change, it connects to web server, passing a sensor ID and status.
 
 On the web server (a raspberry pi in this case) this information is written to a text file.
