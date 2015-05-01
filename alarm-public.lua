@@ -30,6 +30,8 @@ function sendalarm(SensorID,status)
 print("Open connection...")
 conn=net.createConnection(net.TCP, 0) 
 conn:on("receive", function(conn, payload) print(payload) end) 
+-- Add you servers ip address here.
+-- If you use a host name/FQDN, it has to be all CAPITALS (Thanks Lee Rayner!) 
 conn:connect(80,'YOURSERVERS-IP') 
 conn:send("GET /alarm.php?SensorID="..urlencode(SensorID).."&status="..urlencode(status).." HTTP/1.1\r\n") 
 conn:send("Host: YOURVHOST.DOMAIN\r\n") 
